@@ -42,7 +42,7 @@ body{
  }
 
  #sp{
-    display: flex;
+    display: inline-flex;
     margin-top: 20px;
  }
 
@@ -121,7 +121,10 @@ hr{
    border-radius: 100px;
    color: rgb(0, 0, 0);
 }
-
+#time{
+    margin-left: 200px;
+    
+}
 @media screen and (max-width: 426px){
    
     .main{
