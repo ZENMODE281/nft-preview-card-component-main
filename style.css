@@ -47,7 +47,7 @@ body{
  }
 
  span{
-    color: hsl(213, 24%, 53%);
+    color: hsl(215, 20%, 83%);
     margin-right: 40px;
  }
 
@@ -59,10 +59,69 @@ body{
  .jules{
     margin-top: 15px;
  }
+h1{
+    margin-top: 15px;
+}
+#jules_hover, #equi{
+    color: hsl(215, 20%, 83%);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
+#jules_hover:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+
+  #equi:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+   
 h1, p, .jules {
-    color: hsl(215, 32%, 27%);
+    color: hsl(215, 20%, 83%);
  }
+
+ .img_hover {
+    position: relative;
+    display: inline-block; /* or block depending on your layout */
+}
+.img_hover img {
+    display: block; /* Ensure the image is displayed as a block element */
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Preserve aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity property */
+}
+.hover-effect {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.5); /* Cyan color with transparency */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity property */
+}
+#view{
+    margin-top: 110px;
+}
+.img_hover:hover .hover-effect {
+    opacity: 1; /* Show overlay on hover */
+}
+.hover-effect img {
+    display: block; /* Ensure the image is displayed as a block element */
+    width: 100%; /* Ensure the image fills the overlay */
+    height: 100%; /* Ensure the image fills the overlay */
+}
+hr{
+    margin-top: 10px;
+   border-radius: 100px;
+   color: rgb(0, 0, 0);
+}
+
 @media screen and (max-width: 426px){
    
     .main{
