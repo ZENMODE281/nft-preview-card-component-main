@@ -16,7 +16,7 @@ body{
 }
 
 .main{
-    margin-top: 150px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
@@ -41,15 +41,26 @@ body{
     margin-right: 10px;
  }
 
- #sp{
-    display: inline-flex;
+ .sp span{
+    padding: 0;
+    display: inline;
+    display: flex;
     margin-top: 20px;
- }
-
- span{
     color: hsl(215, 20%, 83%);
-    margin-right: 40px;
+    white-space: nowrap;
  }
+  #time{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+ } 
+/* #eth, #time{
+    display: flex;
+}*/
+ /* span{
+    color: hsl(215, 20%, 83%);
+    margin-right: 80px;
+ }  */
 
  #avatar{
     width: 50px;
@@ -121,10 +132,7 @@ hr{
    border-radius: 100px;
    color: rgb(0, 0, 0);
 }
-#time{
-    margin-left: 200px;
-    
-}
+
 @media screen and (max-width: 426px){
    
     .main{
